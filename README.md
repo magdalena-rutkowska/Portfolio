@@ -1,11 +1,11 @@
-<h1 align="center">Dream Pulse</h1>
-<p>The "Dream Pulse" project is a dynamic website built using HTML, CSS and JavaScript and powered by the Bootstrap 4.3.1 framework. While this project adopts a modern and impressive design, it has a fully responsive structure to provide an excellent experience on different devices.
+<h1 align="center">Mags' Portfolio</h1>
+<p>The "Mags' Portfolio" project is a dynamic website built using HTML, CSS and JavaScript and powered by the Bootstrap 4.3.1 framework. While this project adopts a modern and impressive design, it has a fully responsive structure to provide an excellent experience on different devices.
 
 The Contact section is designed to enable users to communicate easily. This section contains my contact information, social media links and a user-friendly contact form. Via this form, visitors can contact me to ask questions, offer cooperation or just say hello.
 
 The Bootstrap 4.3.1 framework provides the basic structure of the site, while at the same time providing easy implementation of responsive design. In addition, animations and user interactions have been added using JavaScript to add authenticity and interactivity to the project.
 
-In conclusion, the "Dream Pulse" project is a website that reflects my personal identity, showcases my previous work and allows them to interact with visitors. It aims to provide an unforgettable experience to visitors, carefully designed in terms of both visuality and usability.
+In conclusion, the "Mags' Portfolio" project is a website that reflects my personal identity, showcases my previous work and allows them to interact with visitors. It aims to provide an unforgettable experience to visitors, carefully designed in terms of both visuality and usability.
 
 </p>
 <hr />
