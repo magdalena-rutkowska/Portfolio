@@ -240,6 +240,10 @@ a {
   padding: 55px;
 }
 
+#about p {
+  color: black;
+}
+
 .tm-section-icon {
   color: #369;
   width: 120px;
