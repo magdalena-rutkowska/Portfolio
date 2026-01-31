@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   color: #707172;
-  background-image: url('../img/onlyCodeDunes.png');
+  background-image: url('../img/onlyCodeDunes.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -45,7 +45,7 @@ a {
 }
 
 .tm-bg-dunes {
-  background-image: url('../img/onlyCodeDunes.png');
+  background-image: url('../img/onlyCodeDunes.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
