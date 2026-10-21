@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launch into Computing · Mags' Space</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/essex.css" />
+  </head>
+  <body class="module-page">
+    <div class="module-topbar">
+      <div class="module-wrap"><a href="../index.html#talk">&larr; Mags' Space &middot; Essex MSc</a></div>
+    </div>
+    <main class="module-wrap">
+      <header class="module-header">
+        <div class="term">University of Essex Online &middot; MSc Artificial Intelligence &middot; January 2026 B</div>
+        <h1>Launch into Computing</h1>
+        <p>This module covered the foundations of computing: algorithms, programming languages, software development methodologies, data, security and IT governance. The artefacts below combine working code with written analysis.</p>
+      </header>
+      <section class="module-section">
+        <h2>Programming and algorithms</h2>
+        <article class="artefact">
+          <h3>Sorting Algorithm Performance</h3>
+          <div class="kind">Code and report</div>
+          <p>Bubble sort and quicksort were implemented in Python and tested with pytest before the performance runs. Both were timed on datasets from 100 to 100,000 elements. Bubble sort needed over 600 seconds for the largest dataset, while quicksort finished in under one second. The report links this result to test automation and continuous integration, where slow code leads teams to skip their test suites.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Test-driven development</span><span class="tag">Complexity analysis</span></div>
+          <div class="links"><a href="../assets/essex/Modules/Launch_into_Computing/Sorting_Algorithms_Report.pdf" target="_blank" rel="noopener">Report (PDF)</a><a href="https://github.com/magdalena-rutkowska/algorithm_analysis" target="_blank" rel="noopener">Code on GitHub</a><a href="../assets/essex/Modules/Launch_into_Computing/Algorithmic_Thinking_Seminar3.pdf" target="_blank" rel="noopener">Seminar 3: Algorithmic Thinking (PDF)</a></div>
+        </article>
+        <article class="artefact">
+          <h3>Code Exploration and Language Comparison</h3>
+          <div class="kind">End of module assignment · Parts A1 and A2</div>
+          <p>Two name-cleaning scripts, one in Python and one in JavaScript, were run and debugged. Both returned eight names instead of five because neither normalised the input before removing duplicates. The scripts were corrected and covered by unit tests in each language. A comparison report then evaluates Python and JavaScript across programming model, readability, error handling and suitability for current computing tasks.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Debugging</span><span class="tag">Unit testing</span></div>
+          <div class="links"><a href="../assets/essex/Modules/Launch_into_Computing/Code_Exploration.pdf" target="_blank" rel="noopener">Code exploration (PDF)</a><a href="../assets/essex/Modules/Launch_into_Computing/Python_vs_JavaScript_Comparison.pdf" target="_blank" rel="noopener">Language comparison (PDF)</a><a href="../assets/essex/Modules/Launch_into_Computing/code/clean_names.py" target="_blank" rel="noopener">Python script</a><a href="../assets/essex/Modules/Launch_into_Computing/code/cleanNames.js" target="_blank" rel="noopener">JavaScript script</a></div>
+        </article>
+      </section>
+      <section class="module-section">
+        <h2>Data and machine learning</h2>
+        <article class="artefact">
+          <h3>Stack Overflow Developer Survey Analysis</h3>
+          <div class="kind">Code and reflection</div>
+          <p>This Python project analyses the 2024 and 2025 Stack Overflow Developer Surveys to compare CI/CD tool adoption by organisation size and developer role. It is structured as loader, analysis and visualisation modules, each with its own tests. A short reflection evaluates whether a relational or a document database suits the data. It concludes that SQL remains the stronger choice despite one multi-value column.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Data visualisation</span><span class="tag">SQL vs NoSQL</span></div>
+          <div class="links"><a href="https://github.com/magdalena-rutkowska/stackoverflow-survey-analysis" target="_blank" rel="noopener">Code on GitHub</a><a href="../assets/essex/Modules/Launch_into_Computing/SQL_vs_NoSQL_Reflection.pdf" target="_blank" rel="noopener">SQL vs NoSQL reflection (PDF)</a></div>
+        </article>
+        <article class="artefact">
+          <h3>F1 DNF Prediction</h3>
+          <div class="kind">Machine learning model and evaluation</div>
+          <p>A Random Forest classifier predicts whether a Formula 1 driver will fail to finish a race. It was trained on 14,086 race entries from 1990 onwards. The data was imbalanced, with 32% retirements, so the evaluation focuses on precision and recall rather than accuracy alone. Historical reliability rates were computed without data leakage. The analysis also covers ethical risks, such as encoding past team performance into predictions.</p>
+          <div class="tags"><span class="tag">Random Forest</span><span class="tag">Class imbalance</span><span class="tag">Model evaluation</span><span class="tag">AI ethics</span></div>
+          <div class="links"><a href="../assets/essex/Modules/Launch_into_Computing/F1_DNF_Prediction.pdf" target="_blank" rel="noopener">Analysis (PDF)</a></div>
+        </article>
+      </section>
+      <section class="module-section">
+        <h2>Software engineering, security and governance</h2>
+        <article class="artefact">
+          <h3>V-Model and Agile: A Comparative Analysis</h3>
+          <div class="kind">Written analysis</div>
+          <p>This analysis compares the V-Model and Agile across flexibility, project scale and risk management. It argues that the choice of methodology should depend on the project and its regulatory context rather than on trends.</p>
+          <div class="tags"><span class="tag">Software development lifecycle</span><span class="tag">Agile</span><span class="tag">Quality assurance</span></div>
+          <div class="links"><a href="../assets/essex/Modules/Launch_into_Computing/V-Model_vs_Agile_Analysis.pdf" target="_blank" rel="noopener">Read the analysis (PDF)</a></div>
+        </article>
+        <article class="artefact">
+          <h3>CI/CD Pipeline Compromise: Threat Assessment and Mitigation Plan</h3>
+          <div class="kind">Scenario-based report</div>
+          <p>A fictional software company discovers malicious code injected through its build pipeline. The report traces the breach to three weaknesses: dependency confusion, plaintext deployment secrets and missing build monitoring. It proposes controls at three levels, including pinned and verified dependencies, signed artefacts, the SLSA framework and least-privilege secrets management.</p>
+          <div class="tags"><span class="tag">Supply chain security</span><span class="tag">CI/CD</span><span class="tag">ISO/IEC 27001</span></div>
+          <div class="links"><a href="../assets/essex/Modules/Launch_into_Computing/CICD_Threat_Assessment.pdf" target="_blank" rel="noopener">Read the report (PDF)</a></div>
+        </article>
+        <article class="artefact">
+          <h3>IT Governance with COBIT 2019</h3>
+          <div class="kind">Framework analysis</div>
+          <p>This analysis applies COBIT 2019 to a global e-commerce organisation. It explains the framework&#x27;s governance principles and objectives, and assesses how they support traceable IT decisions under regulation in several jurisdictions.</p>
+          <div class="tags"><span class="tag">IT governance</span><span class="tag">COBIT 2019</span><span class="tag">Risk management</span></div>
+          <div class="links"><a href="../assets/essex/Modules/Launch_into_Computing/COBIT_Governance_Analysis.pdf" target="_blank" rel="noopener">Read the analysis (PDF)</a></div>
+        </article>
+        <article class="artefact">
+          <h3>Evaluating AI: Innovation, Ethics and the Limits of Governance</h3>
+          <div class="kind">Presentation · End of module assignment Part B</div>
+          <p>This recorded presentation explains how machine learning, neural networks and large language models are used in enterprise settings. It then examines documented failures, such as biased hiring and grading algorithms. It argues that governance frameworks have not kept pace with the speed and scale of AI decisions.</p>
+          <div class="tags"><span class="tag">AI ethics</span><span class="tag">Governance</span><span class="tag">Presentation</span></div>
+          <div class="links"><a href="../assets/essex/Modules/Launch_into_Computing/Evaluating_AI_Presentation.pdf" target="_blank" rel="noopener">View the slides (PDF)</a></div>
+        </article>
+      </section>
+    </main>
+    <footer class="module-wrap module-footer">&copy; 2026 Magdalena Rutkowska</footer>
+  </body>
+</html>

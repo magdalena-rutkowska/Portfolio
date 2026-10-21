@@ -1,0 +1,240 @@
+/* Essex MSc portfolio: module cards (homepage) and module pages */
+
+/* ---------- Homepage: module list ---------- */
+.essex-intro {
+  color: #555;
+  margin-bottom: 28px;
+  max-width: 760px;
+}
+
+.essex-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.essex-module-card {
+  display: block;
+  padding: 18px 20px;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #069;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.essex-module-card:hover {
+  background: #f0f7fb;
+  border-color: #069;
+  color: #333;
+  text-decoration: none;
+}
+
+.essex-module-card .term {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.essex-module-card .name {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #069;
+  margin-bottom: 6px;
+}
+
+.essex-module-card .meta {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.essex-module-card.current {
+  border-left-color: #c96a1b;
+}
+
+/* ---------- Module pages ---------- */
+body.module-page {
+  background: #f4f6f8;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #333;
+}
+
+.module-topbar {
+  background: #069;
+  padding: 12px 0;
+}
+
+.module-topbar a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.module-topbar a:hover {
+  text-decoration: underline;
+}
+
+.module-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.module-header {
+  padding: 40px 0 24px;
+}
+
+.module-header .term {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.module-header h1 {
+  color: #069;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 6px 0 14px;
+}
+
+.module-header p {
+  max-width: 720px;
+  color: #555;
+  margin-bottom: 0;
+}
+
+.module-section {
+  margin-bottom: 36px;
+}
+
+.module-section > h2 {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 2px solid #069;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.artefact {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.artefact h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.artefact .kind {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.artefact p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.artefact .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.artefact .tag {
+  font-size: 0.75rem;
+  background: #eef4f8;
+  color: #045;
+  border-radius: 3px;
+  padding: 2px 8px;
+}
+
+.artefact .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.artefact .links a {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #069;
+  border-radius: 4px;
+  color: #069;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.artefact .links a:hover {
+  background: #069;
+  color: #fff;
+}
+
+.artefact.planned {
+  background: transparent;
+  border-style: dashed;
+}
+
+.artefact.planned h3 {
+  color: #555;
+}
+
+.status-pill {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8a4a0f;
+  background: #fbeedd;
+  border-radius: 3px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.lo-list {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 18px 22px 8px 42px;
+}
+
+.lo-list li {
+  margin-bottom: 10px;
+  line-height: 1.55;
+}
+
+.module-footer {
+  border-top: 1px solid #ddd;
+  padding: 20px 0 40px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+@media (max-width: 575px) {
+  .module-header h1 {
+    font-size: 1.6rem;
+  }
+  .artefact {
+    padding: 16px;
+  }
+}
